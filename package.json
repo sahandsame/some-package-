@@ -1,0 +1,25 @@
+{
+  "name": "rollr",
+  "version": "1.0.0",
+  "description": "An advanced bot that should be mainly used for moderation, but does include some fun commands.",
+  "main": "rollr.js",
+  "scripts": {
+    "main": "rollr.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JackMcCally/Rollr.git"
+  },
+  "keywords": [
+    "rollr-discord"
+  ],
+  "author": "JackMcCally",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JackMcCally/Rollr/issues"
+  },
+  "homepage": "https://github.com/JackMcCally/Rollr#readme",
+  "dependencies": {
+    "discord.js": "^11.0.0"
+  }
+}
