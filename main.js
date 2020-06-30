@@ -37,6 +37,15 @@ bot.on("guildMemberAdd",member => {
       log('CMD', e)
     }
   });
+
+bot.on("guildMemberRemove",member => {
+  try {
+    let RFile = require("./event/guildMemberRemove.js");
+    RFile.run(args,msg,bot);
+    } catch(e) {
+      log('CMD', e)
+    }
+  });
 bot.on('error', console.error);
 bot.on('warn', console.warn);
 bot.on('disconnect', console.warn);
