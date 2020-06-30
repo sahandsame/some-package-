@@ -29,6 +29,14 @@ bot.on('message', msg => {
   }
 });
 
+bot.on("guildMemberAdd",member => {
+  try {
+    let AFile = require("./event/guildMemberAdd.js");
+    AFile.run(args,msg,bot);
+    } catch(e) {
+      log('CMD', e)
+    }
+  });
 bot.on('error', console.error);
 bot.on('warn', console.warn);
 bot.on('disconnect', console.warn);
